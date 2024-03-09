@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETEC AE - Autenticar</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+</head>
+<body>
+            <div class="responsivo">
+                <div class="entrar">
+                    <div id="signin">
+                        <h4 class="caixas">Entrar</h4>
+                        <input type="email" id="emailEntrar" placeholder=" Informe email" class="imput">
+                        <br><br>
+                        <input type="password" id="senhaEntrar" placeholder="Informe senha" class="imput">
+                        <br><br>
+                        <input type="button" id="btnEntrar" value="Entrar" class="button">
+                        <input type="button" id="btnGoogle" value="Cadastrar com Google" class="button">
+                        <br><br>
+                        <button id="btnCadastrar" onclick="openPopup()"> Cadastrar</button>
+                    </div>
+                </div>
+                    <div id="popup" class="popup">
+                        <div class="popup-content">
+                            <br>
+                            <!-- Conteúdo do seu formulário de cadastro aqui -->
+                            <div id="signup">
+                                <h4>Cadastrar</h4>
+                                <input type="email" id="emailCad" placeholder="Informe email" class="imput">
+                                <br><br>
+                                <input type="password" id="senhaCad"  placeholder="Informe senha" class="imput">
+                                <br><br>
+                                <input type="password" id="senhaCad2" placeholder="Confirme senha" class="imput">
+                                <br><br>
+                                <input type="button" id="btnCad" value="Criar usuário" class="button">
+                                <input type="button" id="btnGoogle" value="Cadastrar com Google" class="button">
+                            </div>
+                            <!-- Adicione seus campos de formulário e botão de envio aqui -->
+                            <br>
+                            <button onclick="closePopup()"> Entrar</button>
+                        </div>
+                    </div>
+            </div>
+
+
+                <div class="conta">
+                    <div id="dados">
+                        <h4>Este é seu perfil:</h4>
+                        <p id="perfil"></p>
+                        <p> <img src="" alt="" id="foto"></p>
+                        <button type="button" id="btnSair">Sair</button>
+                    </div>
+                </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

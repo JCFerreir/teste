@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ECEBDC;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.cabecalho{
+    background-color: #F05841;
+    width: 100%;
+    margin: 0;
+    padding: 40px;   
+}
+
+.cabecalho .btn{
+    position: absolute;
+    top: 25px; /* Ajuste a distância do topo conforme necessário */
+    right: 30px; /* Ajuste a distância da direita conforme necessário */
+    /* Outros estilos necessários para a sua linha de código */
+}
+
+.cabecalho .btn a{
+    font-size: 30px;
+    color: black;
+    
+}
